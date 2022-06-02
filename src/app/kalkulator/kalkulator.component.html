@@ -1,0 +1,97 @@
+
+
+<!-- <input type="text" name="num1" [(ngModel)]="num1" gteValidator (change)="log(num1)">
+<div *ngIf="gteValidator">
+    The number should below 4
+  </div>
+
+<input type="number" name="num2" [(ngModel)]="num2">
+ -->
+
+ <!-- <form [formGroup]="profileForm">
+
+    
+    <input id="first-name" type="number" formControlName="num1">
+  
+    
+    <input id="last-name" type="number" formControlName="num2">
+    <button type="submit" [disabled]="!profileForm.valid" (click)="Add()">+</button>
+    <button type="submit" [disabled]="!profileForm.valid" (click)="Sub()">-</button>
+    <button type="submit" [disabled]="!profileForm.valid" (click)="Multiply()">x</button>
+    <button type="submit" [disabled]="!profileForm.valid" (click)="Divide()">/</button>
+    
+
+  </form>
+
+  <div *ngIf="!profileForm.valid">
+    Kolom 1 hanya bisa menginput angka 1-4.
+</div> 
+
+<label for="">Hasilnya {{num3}}</label> -->
+
+
+<!--   
+<div *ngIf="num1.errors?.min">
+    Minimum required number is 15.
+</div> 
+<div *ngIf="num2.errors?.max">
+    Maximum number can be 50.
+</div>  -->
+
+
+<!-- 
+<div>
+<button (click)="Add()">+</button>
+<button (click)="Sub()">-</button>
+<button (click)="Multiply()">x</button>
+<button (click)="Divide()">/</button>
+</div> -->
+
+
+
+<!-- (change)="log(num1)" -->
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Kalkulator Sederhana</h2>
+              
+              <form [formGroup]="profileForm">
+              <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typeEmailX" *ngIf="!profileForm.valid"> Kolom 1 hanya bisa menginput angka 1-4.</label>
+                <input id="first-name" type="number" formControlName="num1" class="form-control form-control-lg" />
+                
+              </div>
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="typeEmailX"></label>
+              <input id="last-name" type="number" formControlName="num2" class="form-control form-control-lg" />
+              
+            </div>
+
+            <h4  for="" > <strong> Hasilnya {{num3}}</strong></h4>
+              
+              
+              
+              </form>
+
+              <button  class="btn btn-outline-light m-1 " type="submit" [disabled]="!profileForm.valid" (click)="Add()">+</button>
+              <button  class="btn btn-outline-light m-1 " type="submit" [disabled]="!profileForm.valid" (click)="Sub()">-</button>
+              <button  class="btn btn-outline-light m-1 " type="submit" [disabled]="!profileForm.valid" (click)="Multiply()">X</button>
+              <button  class="btn btn-outline-light m-1 " type="submit" [disabled]="!profileForm.valid" (click)="Divide()">/</button>
+
+          </div>
+            
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
